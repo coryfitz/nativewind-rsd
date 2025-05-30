@@ -1,0 +1,21 @@
+// babel-plugin-nativewind-to-stylex.js
+module.exports = function(babel) {
+  const { types: t } = babel;
+  
+  return {
+    name: "babel-plugin-nativewind-rsd",
+    visitor: {
+      JSXAttribute(path, state) {
+        // Handle className props
+      },
+      Program: {
+        enter(path, state) {
+          // Initialize plugin state
+        },
+        exit(path, state) {
+          // Generate StyleX imports and definitions
+        }
+      }
+    }
+  };
+};
