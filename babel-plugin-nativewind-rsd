@@ -1,9 +1,8 @@
 export default function (babel) {
     return {
-      name: "async-all-the-things",
+      name: "nativewind-rsd",
       visitor: {
         FunctionDeclaration(path) {
-          path.node.async = true;
         }
       }
     };
